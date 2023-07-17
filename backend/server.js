@@ -5,9 +5,10 @@ let bodyParser = require('body-parser');
 let dbConfig = require('./database/db');
 
 // Express Route
-const studentRoute = require('../backend/routes/student.route')
+const studentRoute = require('./routes/student.route.js')
 
 // Configure mongoDB Database
+//mongoose.connect
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
